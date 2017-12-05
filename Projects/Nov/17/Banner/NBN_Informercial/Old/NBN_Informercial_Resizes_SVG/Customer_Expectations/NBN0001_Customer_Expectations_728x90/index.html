@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="ad.size" content="width=728,height=90">
+    <title>Customer Expectations - 728x90</title>
+
+    <style>
+        #borderDiv {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 728px;
+            height: 90px;
+            background-color: transparent;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 1px solid black;
+            z-index: 402;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script>
+    <script src="lastFrame.js"></script>
+    <script src="banner.js"></script>
+    <script type="text/javascript">
+        var clickTag = "http://www2.nbnco.com.au/nbn-guide.html";
+    </script>
+
+    <!-- write your code here -->
+</head>
+
+<body onload="init()">
+    <div id="container" onclick="window.open(window.clickTag)">
+
+        <div id="frame1">
+            <img src="img1.jpg" height="90" width="728" id="img1" style="opacity: 1;">
+            <img src="copy1.svg" width="728" id="copy1" style="opacity:0;"/>
+        </div>
+        <div id="frame2">
+            <img src="img2.jpg" height="90" width="728" id="img2" style="opacity: 0;">
+            <img src="copy2.svg" height="90" width="728" id="copy2" style="opacity: 0;"/>
+        </div>
+        <div id="frame3">
+            <img src="img3.jpg" height="90" width="728" id="img3" style="opacity: 0;">
+            <img src="girl.png" height="90" width="728" id="girl" style="opacity: 0;">
+        </div>
+        <div id="logo">
+            <img src="small_nbn_logo.png" height="90" width="728" id="nbn_logo" style="opacity:1" />
+        </div>
+        <div id="frame4">
+            <canvas id="canvas" width="728" height="90"></canvas>
+            <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:728px; height:90px">
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:728px; height:90px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+                <div id="borderDiv"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

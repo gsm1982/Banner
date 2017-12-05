@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="ad.size" content="width=640,height=480">
+    <title>Special Services</title>
+
+    <style>
+        #borderDiv {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 640px;
+            height: 480px;
+            background-color: transparent;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 1px solid #999999;
+            z-index: 402;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script>
+    <script src="LogoAnimation.js"></script>
+    <script src="banner.js"></script>
+    <script type="text/javascript">
+        var clickTag = "https://www.nbnco.com.au/connect-home-or-business/check-your-address.html";
+    </script>
+
+</head>
+
+<body onload="init()">
+    <div id="container" onclick="window.open(window.clickTag)">
+        <div id="frame1">
+            <img src="bg1.jpg" height="480" width="640" id="bg1">
+            <img id="copy1" src="copy1.png" style="opacity: 0;" height="480" width="640"/>
+            <img id="bottomCopy" src="bottomCopy.png" style="opacity: 0;" height="480" width="640"/>
+        </div>
+
+        <div id="frame2">
+            <img id="copy2" src="copy2.png" style="opacity: 0;" height="480" width="640"/>
+        </div>
+
+        <div id="logo">
+            <img src="logo2x.png" id="nbn_logo" height="480" width="640"/>
+        </div>
+
+        <div id="animation_container" style="width:640px; height:480px;">
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:640px; height:480px; position: absolute; left: 0px; top: 0px; display: block;">
+            </div>
+            <img id="ld_bg" src="ld_bg.png" style="opacity: 0;" height="480" width="640" />
+            <canvas id="canvas" width="640" height="480" style="position: absolute; display: block"></canvas>     
+        </div>
+
+        <div id="borderDiv"></div>
+
+    </div>
+
+</body>
+
+</html>

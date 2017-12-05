@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="ad.size" content="width=320,height=50">
+    <title>Devices Affected-320x50</title>
+    
+    <style>
+        #borderDiv {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 320px;
+            height: 50px;
+            background-color: transparent;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 1px solid #999999;
+            z-index: 402;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+    <script src="banner.js"></script>
+    <script type="text/javascript">
+        var clickTag = "http://www2.nbnco.com.au/nbn-guide.html";
+    </script>
+
+    <!-- write your code here -->
+</head>
+
+<body onload="init()">
+    <div id="container" onclick="window.open(window.clickTag)">
+
+        <div id="frame1">
+            <img src="bg.jpg" height="50" width="320" id="bg" style="opacity: 1;">
+            <img src="small_nbn_logo2x.png" height="50" width="320" id="logo" style="opacity: 1;">
+            <img src="copy1.svg" id="copy1" style="opacity:0;" height="50" width="320"/>
+        </div>
+        <div id="frame2">
+            <img src="ctaBg.svg" height="50" width="320" id="ctaBg" style="opacity: 0;">
+            <img src="ctaCopy1.svg" id="ctaCopy1" style="opacity: 0;" height="50" width="320"/>
+        </div>
+        <div id="frame3">
+            <img src="ctaCopy2.svg" id="ctaCopy2" style="opacity: 0;" height="50" width="320"/>
+        </div>
+        <div id="borderDiv"></div>
+    </div>
+</body>
+
+</html>
