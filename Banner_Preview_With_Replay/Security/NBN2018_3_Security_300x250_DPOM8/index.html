@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="ad.size" content="width=300,height=250">
+    <title>Devices Affected Security Monitoring 300x250</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script>
+    <script src="LogoAnimation.js"></script>
+    <script src="banner.js"></script>
+    <script type="text/javascript">
+        var clickTag = "https://www.nbnco.com.au/learn-about-the-nbn/device-compatibility/security-alarms.html";
+    </script>
+
+</head>
+
+<body onload="init()">
+    <div id="container" onclick="window.open(window.clickTag)">
+        <div id="frame1">
+            <img src="300x250_bg1.jpg" height="250" width="300" id="bg1">
+            <img id='copy1' src="300x250_copy1_2x.png" height="250" width="300" style="opacity: 0;" />
+        </div>
+
+        <div id="frame2">
+            <img src="300x250_bg2.jpg" height="250" width="300" id="bg2" style="opacity: 0;">
+            <img src="300x250_copy2_2x.png" id='copy2' height="250" width="300" style="opacity: 0;" />
+        </div>
+        <div id="frame3">
+            <img src="300x250_bg3.jpg" height="250" width="300" id="bg3" style="opacity: 0;">
+        </div>
+        <div id="logo">
+            <img src="300x250_small_nbn_logo_2x.png" height="250" width="300" id="nbn_logo" style="opacity: 1;"/>
+        </div>
+
+        <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:300px; height:250px">
+            <canvas id="canvas" width="300" height="250" style="position: absolute; display: block;"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:300px; height:250px; position: absolute; left: 0px; top: 0px; display: block;">
+            </div>
+        </div>
+
+        <div id="borderDiv"></div>
+
+    </div>
+
+</body>
+
+</html>

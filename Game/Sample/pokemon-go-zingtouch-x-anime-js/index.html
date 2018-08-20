@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Go - ZingTouch x Anime.js </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base target="_blank" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <section id="wrapper">
+    <div id="title">
+      <h1>Catch Omanyte!</h1>
+      <p>Works best on a mobile device in
+        <a href="https://codepen.io/zingchart/full/BzmdwQ">fullscreen</a>
+      </p>
+    </div>
+    <div id="info-button" onclick="toggleInfoScreen()">?</div>
+    <div id="info-screen" class="hidden">
+      <div id="info-shade"></div>
+      <div id="info-text">
+        <h3>Catch Omanyte:</h3>
+        <ul>
+          <li>Swipe the pokeball straight up, with just enough velocity </li>
+          <li>The smaller the green circle, the greater chance in catching omanyte!</li>
+        </ul>
+        <h3>Built with:</h3>
+        <ul>
+          <li>
+            <a href="https://zingchart.github.io/zingtouch">ZingTouch</a> - A JavaScript gesture detection library</li>
+          <li>
+            <a href="http://anime-js.com/">Anime.js</a> - a flexible yet lightweight JavaScript animation library.</li>
+        </ul>
+
+        <h3>Brought to you by
+          <a href="https://zingchart.com/">ZingChart</a>
+        </h3>
+        <span style="font-size: 0.8em;">Disclaimer: ZingChart does not own or is affiliated to the character Omanyte or the pokeball item. This is simply
+          a demonstration of web technologies by people who love playing Pokemon Go!</span>
+      </div>
+
+    </div>
+    <div id="touch-layer"></div>
+    <div id="particles"></div>
+    <div id="ring-screen">
+      <div id="ring">
+        <div id="ring-active">
+          <div id="ring-fill"></div>
+        </div>
+      </div>
+    </div>
+    <div id="screen" class="gradient-background">
+      <div id="target-container">
+        <div id="target"></div>
+      </div>
+      <div id="ball"></div>
+      <div id="output"></div>
+    </div>
+
+
+    <div id="capture-screen" class="gradient-background hidden">
+      <div id="capture-status" class="hidden">
+        You caught Omanyte!
+      </div>
+      <div id="poof-container" class="hidden">
+        <div id="poof"></div>
+      </div>
+      <div id="capture-confetti"></div>
+      <div id="capture-ball"></div>
+      <div id="capture-ball-button-container" class="hidden">
+        <div id="capture-ball-button"></div>
+      </div>
+    </div>
+
+
+  </section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingtouch.min.js'></script>
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

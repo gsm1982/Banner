@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+	<ft-default clicktag="1">
+		<div id="frame1" style="opacity:0;">
+				<img id="header" src="images/320x480_f1_Hub_Zero_Heading.png" alt="logo" />
+				<img id="logo_f1" src="images/320x480_f1_Logo.png" alt="logo" />
+				<img id="bottomCopy" src="images/320x480_f1_Click_On.png" alt="Click on logo to begin" />
+		</div>
+		<div id="frame2" style="opacity:0;">
+				<img id="logo_f2" src="images/320x480_f2_Logo.png" alt="logo" />
+				<img id="copy1_f2" src="images/320x480_f2_copy.png" alt="Beat the sun this summer Hub Zero indoor entertainment" />
+				<img id="startCTA" src="images/320x480_f2_CTA_Start.png" alt="Start Game">
+		</div>
+		<div id="frame3" style="opacity:0;">
+			<img id="f3_scorecard"src="images/320x480_f3_Scorecard.png" alt="scorecard">
+			<img id="f3_stopwatch"src="images/320x480_f3_stopwatch.png" alt="stopwatch">
+			<img id="f3_logo"src="images/320x480_f3_Logo.png" alt="logo">
+			<img id="f3_goaliee"src="images/320x480_f3_Goaliee.png" alt="goaliee">
+			<img id="f3_arrow_left" src="images/320x480_f3_Arrow_Left.png" alt="left arrow">
+			<img id="f3_arrow_front" src="images/320x480_f3_Arrow_Front.png" alt="front arrow">
+			<img id="f3_arrow_right" src="images/320x480_f3_Arrow_Right.png" alt="right arrow">
+			<img id="f3_zombiee_head" src="images/320x480_f3_Zombie_Head.png" alt="Zombiee head">
+			<img id="f3_player"src="images/320x480_f3_player.png" alt="player">
+			<img id="f3_cover"src="images/320x480_f3_cover.png" alt="cover">
+			<img id="f3_copy"src="images/320x480_f3_copy.png" alt="Attempt to shoot maximum goals in 30 sec">
+		</div>
+
+		<div id="frame4" style="opacity:1;">
+			<img id="f3_scorecard"src="images/320x480_f3_Scorecard.png" alt="scorecard">
+			<img id="f3_stopwatch"src="images/320x480_f3_stopwatch.png" alt="stopwatch">
+			<img id="f3_logo"src="images/320x480_f3_Logo.png" alt="logo">
+			<img id="f3_goaliee"src="images/320x480_f3_Goaliee.png" alt="goaliee">
+			<img id="f3_arrow_left" src="images/320x480_f3_Arrow_Left.png" alt="left arrow">
+			<img id="f3_arrow_front" src="images/320x480_f3_Arrow_Front.png" alt="front arrow">
+			<img id="f3_arrow_right" src="images/320x480_f3_Arrow_Right.png" alt="right arrow">
+			<img id="f3_zombiee_head" src="images/320x480_f3_Zombie_Head.png" alt="Zombiee head">
+			<img id="f3_player"src="images/320x480_f3_player.png" alt="player">
+			<img id="f3_cover"src="images/320x480_f3_cover.png" alt="cover">
+			<img id="f3_copy"src="images/320x480_f3_copy.png" alt="Attempt to shoot maximum goals in 30 sec">
+		</div>
+
+		<img id="closeBtn" src="images/FT_pink_close.jpg" alt="close button" />
+	</ft-default>
+	
+
+<script src="http://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+<script>
+var closeBtn = myFT.$("#closeBtn");
+myFT.applyButton(closeBtn, function() {
+	myFT.destroy();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+$banner-width: 300px;
+$banner-height: 50px;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.banner {
+  background: #fff;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: $banner-height;
+  left: 50%;
+  overflow: hidden;
+  position: relative;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: $banner-width;
+}
+// body {
+//   height: $banner-height;
+//   width: $banner-width;
+//   margin: 0;
+//   background-color: white;
+//   padding: 0;
+//   margin: 0;
+//   top: 0;
+//   left: 0;
+// }
+
+// #container {
+//   height: $banner-height;
+//   width: $banner-width;
+//   top: 0px;
+//   left: 0px;
+//   margin: 0;
+//   position: absolute;
+//   overflow: hidden;
+//   background-color: white;
+//   cursor: pointer;
+// }
+
+#borderDiv {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: $banner-width;
+  height: $banner-height;
+  background-color: transparent;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #999999;
+  z-index: 402;
+  pointer-events: none;
+}
+
+#frame1,
+#frame2,
+#frame3,
+#frame4,
+#logo,
+#cta {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: $banner-width;
+  opacity: 0;
+}
+
+/* #canvas {
+  position: absolute;
+} */
+
+img {
+  position: absolute;
+}

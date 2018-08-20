@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'> -->
+    <meta charset="UTF-8">
+    <title>NAB Banners</title>
+    <link href="assets/scripts/styles.css" rel="stylesheet" type="text/css">
+    <script src="./node_modules/dom-to-image/src/dom-to-image.js"></script><!--https://github.com/tsayen/dom-to-image -->
+    <script src="assets/scripts//html2canvas.min.js"></script>
+    <script src="assets/scripts/jquery-2.1.4.min.js"></script>
+    <script src="assets/scripts/change-content.js"></script>
+</head>
+
+<body>
+
+    <div class="leftcontent" id="menu"><img src="assets/images/logo.png" width="106" height="52" alt="" /><br/>
+        <!-- LEFT NAV COLUMN STARTS HERE !-->
+        <!-- EDIT TEXT TO REFLECT JOB DETAILS !-->
+        <div class="h1" id="client-name">NBN-Banners</div>
+        <p>&nbsp;</p>
+        <div class="desktop-only">
+            <h2>EFTPOS</h2>
+            <!-- EDIT LINKS USING THE FORMAT BELOW - IMAGES SHOULD USE 'img', SWF OR OTHER HTML PAGES SHOULD USE 'html'  !-->
+            <ul id="html5-banner">
+                <li><a href="#" onclick="changeContent('EFTPOS/NBN2018_3_EFTPOS_300x250_DPOM8/index.html','html')">300x250</a></li>
+                <li><a href="#" onclick="changeContent('EFTPOS/NBN2018_3_EFTPOS_160x600_DPOM8/index.html','html')">160x600</a></li>
+                <li><a href="#" onclick="changeContent('EFTPOS/NBN2018_3_EFTPOS_300x600_DPOM8/index.html','html')">300x600</a></li>
+                <li><a href="#" onclick="changeContent('EFTPOS/NBN2018_3_EFTPOS_300x50_DPOM8/index.html','html')">300x50</a></li>
+                <li><a href="#" onclick="changeContent('EFTPOS/NBN2018_3_EFTPOS_320x50_DPOM8/index.html','html')">320x50</a></li>
+                <li><a href="#" onclick="changeContent('EFTPOS/NBN2018_3_EFTPOS_728x90_DPOM8/index.html','html')">728x90</a></li>
+            </ul>
+            <h2>FAX</h2>
+            <!-- EDIT LINKS USING THE FORMAT BELOW - IMAGES SHOULD USE 'img', SWF OR OTHER HTML PAGES SHOULD USE 'html'  !-->
+            <ul id="html5-banner">
+                <li><a href="#" onclick="changeContent('FAX/NBN2018_3_FAX_300x250_DPOM8/index.html','html')">300x250</a></li>
+                <li><a href="#" onclick="changeContent('FAX/NBN2018_3_FAX_160x600_DPOM8/index.html','html')">160x600</a></li>
+                <li><a href="#" onclick="changeContent('FAX/NBN2018_3_FAX_300x600_DPOM8/index.html','html')">300x600</a></li>
+                <li><a href="#" onclick="changeContent('FAX/NBN2018_3_FAX_300x50_DPOM8/index.html','html')">300x50</a></li>
+                <li><a href="#" onclick="changeContent('FAX/NBN2018_3_FAX_320x50_DPOM8/index.html','html')">320x50</a></li>
+                <li><a href="#" onclick="changeContent('FAX/NBN2018_3_FAX_728x90_DPOM8/index.html','html')">728x90</a></li>
+            </ul>
+            <h2>Security</h2>
+            <!-- EDIT LINKS USING THE FORMAT BELOW - IMAGES SHOULD USE 'img', SWF OR OTHER HTML PAGES SHOULD USE 'html'  !-->
+            <ul id="html5-banner">
+                <li><a href="#" onclick="changeContent('Security/NBN2018_3_Security_300x250_DPOM8/index.html','html')">300x250</a></li>
+                <li><a href="#" onclick="changeContent('Security/NBN2018_3_Security_160x600_DPOM8/index.html','html')">160x600</a></li>
+                <li><a href="#" onclick="changeContent('Security/NBN2018_3_Security_300x600_DPOM8/index.html','html')">300x600</a></li>
+                <li><a href="#" onclick="changeContent('Security/NBN2018_3_Security_300x50_DPOM8/index.html','html')">300x50</a></li>
+                <li><a href="#" onclick="changeContent('Security/NBN2018_3_Security_320x50_DPOM8/index.html','html')">320x50</a></li>
+                <li><a href="#" onclick="changeContent('Security/NBN2018_3_Security_728x90_DPOM8/index.html','html')">728x90</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="desktop-hide mobile-menu">
+        </div>
+    </div>
+    <div class="rightcontent" id="content">
+        <!-- RIGHT CONTENT COLUMN STARTS HERE !-->
+        <!-- DEFINE YOUR DEFAULT CONTENT HERE IF YOU WANT TO SEE SOMETHING ON FIRST LOAD !-->
+    </div>
+    <div id="img-out"></div>
+    <div id="include-config"></div>
+</body>
+
+</html>

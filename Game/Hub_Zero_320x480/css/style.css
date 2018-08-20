@@ -1,0 +1,148 @@
+@font-face {
+	font-family: opensans;
+	src: url("../fonts/opensans-regular-webfont.ttf");
+	src: url("../fonts/opensans-regular-webfont.woff");
+}
+
+* {
+	font-family: opensans;
+   	margin: 0;
+   	padding: 0;
+}
+
+html, body {
+	height: 480px;
+	width: 320px;
+}
+
+ft-default {
+	background-image: url("../images/320x480_Background.jpg") !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#closeBtn {
+	bottom: 10px;
+	position: absolute;
+	right: 10px;
+}
+img{
+	position: absolute;
+}
+
+/* Frame 1 */
+#header {
+	width:246px;
+	height:50px;
+	left: 43px;
+	top: 32px;
+}
+
+#logo_f1 {
+	width:252px;
+	height:124px;
+	left: 36px;
+	top: 164px;	
+}
+#bottomCopy {
+	width:155;
+	height:40px;
+	left: 82px;
+	bottom: 62px;	
+}
+/* Frame 2 */
+#logo_f2 {
+	width:175px;
+	height:86px;
+	left: 73px;
+	top: 21px;	
+}
+#copy1_f2{
+	width:275px;
+	height:30px;
+	top:225px;
+	left:23px;
+}
+#startCTA{
+	width:133px;
+	height:35px;
+	left:94px;
+	bottom:92px;
+}
+/* Frame 3 */
+#frame3 {
+	background-image: url("../images/320x480_f3_background.jpg") !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:320px;
+	height:480px;
+}
+
+#f3_scorecard {
+	width:106px;
+	height:49px;
+	left:8px;
+	top:21px;
+}
+#f3_stopwatch {
+	width:38px;
+	height:41px;
+	left:141px;
+	top:27px;
+}
+#f3_logo {
+	width:112px;
+	height:55px;
+	left:201px;
+	top:20px;
+}
+#f3_goaliee {
+	width:62px;
+	height:72px;
+	left:140px;
+	top:220px;
+}
+
+#f3_arrow_left {
+	width:29px;
+	height:14px;
+	left:88px;
+	top:364px;
+}
+#f3_arrow_front {
+	width:14px;
+	height:29px;
+	left:126px;
+	top:322px;
+}
+#f3_arrow_right {
+	width:29px;
+	height:14px;
+	left:158px;
+	top:364px;
+}
+#f3_zombiee_head {
+	width:45px;
+	height:41px;
+	left:114px;
+	top:352px;
+}
+
+#f3_player {
+	width:96px;
+	height:189px;
+	left:-4px;
+	top:260px;
+}
+#f3_cover {
+	width:320px;
+	height:480px;
+	left:0px;
+	top:0px;
+}
+#f3_copy {
+	width:208px;
+	height:32px;
+	left:56px;
+	top:154px;
+}
